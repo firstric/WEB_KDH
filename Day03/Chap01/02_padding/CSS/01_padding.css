@@ -1,0 +1,22 @@
+
+.container{
+    position: relative;
+    width: 1200px;
+    border: 3px dashed orange;
+    margin: auto;
+    text-align: center;
+
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    line-height: 100;
+    border: 1px solid gray;
+    background-color: #ddd;
+}
+
+.box1 {padding: 20px 40px 80px 100px;}      /* top right bottom left */
+.box2 {padding: 20px 40px 80px;}            /* top (left/right) bottom */
+.box3 {padding: 20px 40px;}                 /* (top/bottom) (left/right) */
+.box4 {padding: 20px;}                      /* all */

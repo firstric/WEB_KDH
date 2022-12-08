@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        html {font-size: 32px;}
+        body {font-size: 16px;}
+
+        /* em : 부모요소의 배율로 지정한 단위
+            부모요소: 16px
+            자식요소: 2em = 32px
+         */
+
+         /* 
+            rem: html의 배유롤 지정한 단위
+            html요소    : 32px
+            지정요소     : 2rem = 64px
+         */
+         p#t1 {font-size: 1em;}
+         p#t2 {font-size: 2em;}
+         p#t3 {font-size: 4em;}
+        
+        p#r1 {font-size: 1rem;}
+        p#r2 {font-size: 2rem;}
+        p#r3 {font-size: 3rem;}
+
+    </style>
+</head>
+<body>      
+    <!-- body는 16px로 해놓았다 -->
+    <p id="t1">paragraph.</p>
+    <p id="t2">paragraph.</p>
+    <p id="t3">paragraph.</p>
+    <hr>
+    <!-- html은 32px로 해놓았다 -->
+    <p id="r1">paragraph.</p>
+    <p id="r2">paragraph.</p>
+    <p id="r3">paragraph.</p>
+
+</body>
+</html>

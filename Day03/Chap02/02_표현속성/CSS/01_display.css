@@ -1,0 +1,82 @@
+.container {
+    width: 960px;
+    min-height: 400px;
+    margin: 0 auto;
+    border: 3px dashed orange;
+}
+
+li {
+    display: inline;        /* width, height 적용이 안됨 */
+    display: inline-block;  /* width, height 적용 됨 */
+    /* inline       : 크기를 가지지 않고(텍스트 길이가 크기), 한 줄 에 나란히 배치 */
+    /* block        : 크기를 가지면서, 한 주 전체를 차지하면서 배치 */
+    /* inline-block : 크기를 가지면서, 한 줄 에 나란히 배치 */
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+li:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* 화면에 보이지 않게 지정 */
+.none {display: none;}              /* 요소를 아예 없에버리는거 */
+.hidden { visibility: hidden;}      /* 요소를 안보이게만 하는거(레이아웃은 남아있음) */
+
+/* 요소를 생성 > 랜더링 > 출력 */
+/* 
+    display : none;
+    - 화면에 요소 자체가 생성되지 않음
+    - 레이아웃에 영향을 미치지 않음
+
+    visibility : hidden;
+    - 요소를 생성하지만 랜더링하지 않음
+    - 레이아아웃에 영향을 미침
+ */
+
+ /* grid */
+ .grid-container {
+    display: grid;
+    /* 
+        grid-templet-columns
+        Grid 레이아웃의 열의 크기를 지정하는 속성
+            - 여기서는 3개의 열의 크기를 auto로 지정
+     */
+     grid-template-columns: auto auto auto;     /* 4열로 만들고 싶으면 auto 4개 치면됨, 가운데만 작게 하고싶으면 가운데만 작게 px지정 */
+     background-color: royalblue;
+     padding: 10px;
+ }
+
+ .item {
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+ }
+
+ .item img { width: 100%;}
+
+ /* flex */
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap : 아이템들의 줄바꿈 여부를 지정하는 속성 */
+    padding: 0 4px;
+ }
+
+ .col {
+    flex-basis: 33.3333%; /* 아이템의 기본 넓이 */
+    min-width: 33.3333%;
+    padding: 0 4px;
+    box-sizing: border-box;
+ }
+
+ .col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+ }

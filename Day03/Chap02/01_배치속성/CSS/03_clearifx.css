@@ -1,0 +1,28 @@
+.container{
+    position: relative;
+    width: 1024px;
+    min-height: 500px;
+    border: 5px dashed orange;
+    margin: auto;
+}
+
+h1 {text-align: center;}
+
+.inner::after {
+    display: block;         /* display: 블록요소일지 인라인요소일지 테이블요소일지 등 속성을 지정 */
+    content: '';            /*        : hmtl에서 원래는 블록요소라도 display로 css에서 인라인으로 바꿀 수 있음 */
+    clear: both;
+}
+
+.item{
+    width: 300px;
+    height: 200px;
+}
+
+.left {float: left; background-color: pink;}
+.right {float: right; background-color: lightblue;}
+.next {background-color: cornflowerblue;}
+
+.clear-left {clear: left;}
+.clear-right {clear: right;}
+.clear-both {clear: both;}
