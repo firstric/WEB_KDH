@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수</title>
+
+    <script>
+        // var          : 변수 선언 키워드
+        //                  - 1995 ~ 2015년 까지의 자바스크립트 문법
+        // let          : 변수 선언 키워드
+        //                  - 2015년 이후의 자바스크립트 문법
+        // const        : 상수 선언 키워드
+
+        // 변수         : 데이터를 저장하는 공간
+        // 상수         : 한 번 초기화한 값을 변경하지 않는 메모리
+
+        const p1 = 10;
+        const p2 = 20;
+        let sum = p1 + p2;
+
+        // 자바스크립트에서는 문장 구분기호(;) 을 생략할 수 있다 
+        // (컴파일 하지 않고, 코드를 한줄한줄 읽는다): 한줄에 2개 이상의 문장을 쓰려면 ; 으로 구분해줘야함. , 문법에 문제가 있어도 실행됨
+
+        var a = 100
+        var b = 200
+        let result = a + b
+
+        var a = 111         
+        /* 
+            중복선언 되었는데 문법상 문제를 잡지 않고, 실행됨 (옛 날 문법은 너무 유연하여 문제가됨) 
+            변수의 사용범위를 전역범위, 함수범위만 제공
+        */
+
+        let x = 1000
+        let y = 2000
+        let total = x + y
+
+        // let = 1111 
+        /* 
+            let 
+            - 정의된 변수를 중복선언 할 수 없다
+            - 변수의 사용범위를 전역범위, 함수범위, 블록범위({ })를 제공
+        */
+
+        console.log('sum: ' + sum)
+        console.log('result: ' + result)
+        console.log('total: ' + total)
+
+    </script>
+</head>
+<body>
+        <h1>html 파일에서 script를 태그로 선언하면 여기 안에 있는 것이 자바스크립트로 된다</h1>
+        <h2>스크립트 안에서 작성한 코드는 html파일을 실행 시킨 뒤 개발자도구를 키면 그 안에 console에서 실행되는 것을 볼 수 있다</h2>
+        <h3>console.log() 는 자바의 System.out.println()과 비슷한거 - 콘솔에 출력됨 / alert는 경고문인데 출력대신 씀</h3>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch2</title>
+    <script>
+        const menoNo = Number(prompt('메뉴번호를 입력해라'))
+        let menu = ''
+
+        switch (menuNo) {
+            case 1:
+                menu = '올리브치킨'
+                break;
+            case 2:
+                menu = '엄깨피자'
+                break;
+            case 3:
+                menu = '팔도피자'
+                break;
+            case 4:
+                menu = '팔자피자'
+                break;
+        
+            default:
+                alert('메뉴번호가 존재하지 않습니다')
+                break;
+        }
+        if(menuNo >= 1 && menoNo <=4) {
+            alert(`${menu} 이(/가) 주문되었습니다. \n 30분 내로 도착할 예정입니다`)
+        } else { alert('없는건 시키지 마라')}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

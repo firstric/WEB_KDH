@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엄격모드</title>
+    <script>
+        // 'use strict' : 느슨한 자바스크립트에서 잡지 못하는 구분의 에러를 자바처럼 철저하게 잡는다.
+        // 변수 선언 시, 타입을 선언하지 않으면,
+        // (엄격모드): 타입을 선언하지 않았기 때문에 에러 발생
+        // - 엄격모드가 아닐 때는 에러가 발생하지 않는다
+
+        'use strict'
+        data = 10
+        console.log(data)
+    </script>
+
+    <script>
+        // 여기는 엄격모드가 아니기때문에 그냥 값이 나온다.
+        data = 10
+        console.log(data)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

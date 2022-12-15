@@ -19,7 +19,7 @@ a {
 
 /* 전체 영역 */
 .container {
-    width: 100%;
+    width: 70%;
     height: 100vh;
     background: white;
 }
@@ -68,14 +68,9 @@ a {
    border-bottom: 1px solid #aaa;
 }
 
-/* 
-    ::placeholder
-    :- input 태그의 placeholder 속성을 선택하는 가상선택자
-*/
-
 #login .login-inputbox::placeholder { color: #aaa;}
 
-#login .login-inputbox input ~ .border {    /* ~. 형제자매요소 연결자 */
+#login .login-inputbox input ~ .border {   
     position: absolute;
     top: 30px;
     left: 0;
@@ -83,11 +78,6 @@ a {
     border: 0px solid cornflowerblue;
     background-color: cornflowerblue;
 }
-
-/* 
-    :focus
-    - input 태그에 마우커서가 놓인 상태를 선택
-*/
 
 #login .login-inputbox input:focus ~ .border {
     width: 100%;
@@ -139,9 +129,7 @@ a {
     height: 8px;
     border: solid white;
     border-width: 0 3px 3px 0;  
-    /* 네모모양에 보더를 오른쪽 아래만 테두리보더를 만들어서 역 ㄴ짜를 만든다 */
     transform: rotate(45deg);
-    /* 역 ㄴ짜를 회전시켜 체크모양을 만든다. */
 }
 
 #login .login-remember label input:checked ~ .checkmark {
@@ -177,4 +165,76 @@ a {
 
 #login .copy p {
     font-size: 0.8rem;  text-align: center;
+}
+
+/* 메뉴창 여닫는 버튼 */
+.btn-menu {
+    position: fixed; top: 10px; left: 10px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+#btn-close {
+    position: absolute;
+        }
+
+
+/* 사이트 메뉴 */
+.animate-box {
+    width: 30%;
+    height: 100vh;
+    background-color: #333;
+    margin-top: 50px;
+    margin: 0 auto;
+    float: left;
+}
+/* 로그인, 프로필, 포트폴리오 */
+.button-box {
+    width: 1rem;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    left: 40%
+}
+
+button {
+    width: 30%;
+    margin-top: 20px;
+    line-height: 20px;
+    outline: 0;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:active,
+button:hover
+{
+    color: blue;
+}
+
+/* 나의포트폴리오(상단글씨) */
+.mepor {
+    line-height: 50px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#me { color: blue;}
+
+/* 맨 밑에 그림링크 */
+.link ~ span {
+    position: relative;
+    margin-left: 20px;
+    padding: 10px;
 }

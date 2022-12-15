@@ -1,0 +1,55 @@
+* {margin: 0; padding: 0;}
+
+#wrap {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(217,207,17,1) 35%, rgba(124,228,109,1) 63%, rgba(77,238,155,1) 77%, rgba(0,255,230,1) 100%);
+    
+
+    /* 애니메이션 */
+    animation-name: ball;                        /* 애니메이션 이름 */
+    animation-duration: 3s;                      /* 재생시간 */    
+    animation-timing-function: linear;           /* 타이밍 함수 */
+    animation-iteration-count: 3;                /* 반복 횟수 */
+}
+
+
+#wrap h1 {
+    line-height: 200px;   color: white;   text-align: center;
+}
+
+/* 애니메이션의 변경지점을 지정하는 속성 */
+/* @keyframe xxx                 animation-name: xxx(이거랑 똑같이 적어줘야한다) */
+
+/* 왼쪽에서 오른쪽으로 */
+@keyframes ball {
+    /* 시작위치 - from or 0% */
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 500px;
+        transform: rotate(180deg);
+    }
+}
+
+/* 갔다가 오는거 */
+@keyframes ball {
+    /* 시작위치 - from or 0% */
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 500px;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        left: 0;
+        transform: rotate(0);
+    }
+}

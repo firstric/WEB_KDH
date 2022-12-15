@@ -46,6 +46,7 @@ h1 {text-align: center;}
 /* center 가운데에 놓기 */
 /* .center { top: 50%; left: 50%;} 이렇게 하면 이상하게됨 */
 .center {
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

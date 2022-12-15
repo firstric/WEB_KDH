@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콜백함수 - foreach함수</title>
+    <script>
+        const lotto = [13,27,4,43,5,38]
+
+        // 배열.forEach( 콜백함수 )
+        // - 콜백함수(인자1, 인자2, 인자3)
+        // * 인자1: 배열 요소의 값
+        // * 인자2: 배열 요소의 인덱스
+        // * 인자3: 배열
+        // : 배열의 모든 요소를 순차적으로 반복하는 반복문 ( 02_콜백함수_익명을 forEach라는 유팉함수로 좀 더 간단하게 만든 느낌이네.. )
+        lotto.forEach(function(value, index, array) {
+            document.write(`${index+1} 번째 번호: ${value} <br>`)
+            console.log(`${index+1} 번째 번호: ${value}`)
+        })
+
+
+        // 개념++ : 굳이 위 함수를 선언 함수로 콜백 해보면
+        lotto.forEach( test )
+
+        function test(value, index, array) {
+            document.write(`${index+1} 번째 번호: ${value} <br>`)
+            console.log(`${index+1} 번째 번호: ${value}`)
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
